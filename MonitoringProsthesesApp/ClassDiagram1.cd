@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MonitoringProsthesesApp.Providers.ErorStatisticsProvider">
+    <Position X="4.5" Y="3.75" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AQEAIAAAAAACAAAAAAABAAAAAAFAAABAAAAAAACAAAA=</HashCode>
+      <FileName>Providers\ErorStatisticsProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonitoringProsthesesApp.Providers.InstallationProsthesesProvider">
+    <Position X="8.5" Y="4.25" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AQEAIAAAAAACAAAQYAABAAAAAAEAAABAAgAAAAAAAAA=</HashCode>
+      <FileName>Providers\InstallationProsthesesProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonitoringProsthesesApp.Providers.PatientsProvider">
+    <Position X="4.75" Y="0.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAACAAAAAAAAAAAAAAAAACAAAAgBAAAEAAA=</HashCode>
+      <FileName>Providers\PatientsProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonitoringProsthesesApp.Providers.ProsthesesProvider">
+    <Position X="0.5" Y="6.25" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAIACAAAAACEAAAAAAAEAAIAAAAAAQEAAAAA=</HashCode>
+      <FileName>Providers\ProsthesesProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonitoringProsthesesApp.Providers.StatisticsProsthesesProvider">
+    <Position X="3.25" Y="6.5" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAACAAAAACCAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Providers\StatisticsProsthesesProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonitoringProsthesesApp.Providers.TypesProsthesesProvider">
+    <Position X="0.5" Y="3.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>ACAAACAAAAACAAQABAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Providers\TypesProsthesesProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonitoringProsthesesApp.Provider.LogsProvider">
+    <Position X="2.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAACAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Providers\LogsProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonitoringProsthesesApp.Provider.UsersProvider">
+    <Position X="7.5" Y="0.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>BABAAAAAAAACAgAAAAAAgAAIAAAAAAAAAAAACAEQIAA=</HashCode>
+      <FileName>Providers\UsersProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Object">
+    <Position X="0.5" Y="0.75" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

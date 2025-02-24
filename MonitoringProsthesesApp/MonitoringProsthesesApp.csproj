@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B3734531-786B-49ED-A7D0-3894E8D064A2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MonitoringProsthesesApp</RootNamespace>
+    <AssemblyName>MonitoringProsthesesApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppCode\EncryptData.cs" />
+    <Compile Include="AppCode\ErorsProsthesesApp.cs" />
+    <Compile Include="AppCode\NamesMy.cs" />
+    <Compile Include="AppCode\RoleApp.cs" />
+    <Compile Include="AppCode\ValidationMy.cs" />
+    <Compile Include="BLL\RapBLL.cs" />
+    <Compile Include="Forms\Controls\StatusTrackingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\StatusTrackingForm.Designer.cs">
+      <DependentUpon>StatusTrackingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dictionary\InstallationProsthesesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dictionary\InstallationProsthesesForm.Designer.cs">
+      <DependentUpon>InstallationProsthesesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dictionary\PatientsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dictionary\PatientsForm.Designer.cs">
+      <DependentUpon>PatientsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dictionary\ProsthesesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dictionary\ProsthesesForm.Designer.cs">
+      <DependentUpon>ProsthesesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dictionary\TypesProsthesesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dictionary\TypesProsthesesForm.Designer.cs">
+      <DependentUpon>TypesProsthesesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dictionary\UpdateInstallationProsthesesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dictionary\UpdateInstallationProsthesesForm.Designer.cs">
+      <DependentUpon>UpdateInstallationProsthesesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dictionary\UpdatePatientsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dictionary\UpdatePatientsForm.Designer.cs">
+      <DependentUpon>UpdatePatientsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dictionary\UpdateProsthesesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dictionary\UpdateProsthesesForm.Designer.cs">
+      <DependentUpon>UpdateProsthesesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dictionary\UpdateTypesProsthesesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dictionary\UpdateTypesProsthesesForm.Designer.cs">
+      <DependentUpon>UpdateTypesProsthesesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Raport\ErorRaportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Raport\ErorRaportForm.Designer.cs">
+      <DependentUpon>ErorRaportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Raport\InstallForPeriodDateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Raport\InstallForPeriodDateForm.Designer.cs">
+      <DependentUpon>InstallForPeriodDateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Raport\StatisticRaportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Raport\StatisticRaportForm.Designer.cs">
+      <DependentUpon>StatisticRaportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Raport\TypesProsthesesRaportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Raport\TypesProsthesesRaportForm.Designer.cs">
+      <DependentUpon>TypesProsthesesRaportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Systems\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Systems\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Systems\SystemLogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Systems\SystemLogForm.Designer.cs">
+      <DependentUpon>SystemLogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Systems\UpdateUsersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Systems\UpdateUsersForm.Designer.cs">
+      <DependentUpon>UpdateUsersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Systems\UsersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Systems\UsersForm.Designer.cs">
+      <DependentUpon>UsersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonitoringProsthesesMDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonitoringProsthesesMDI.Designer.cs">
+      <DependentUpon>MonitoringProsthesesMDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Providers\ErorStatisticsProvider.cs" />
+    <Compile Include="Providers\InstallationProsthesesProvider.cs" />
+    <Compile Include="Providers\LogsProvider.cs" />
+    <Compile Include="Providers\PatientsProvider.cs" />
+    <Compile Include="Providers\ProsthesesProvider.cs" />
+    <Compile Include="Providers\StatisticsProsthesesProvider.cs" />
+    <Compile Include="Providers\TypesProsthesesProvider.cs" />
+    <Compile Include="Providers\UsersProvider.cs" />
+    <EmbeddedResource Include="Forms\Controls\StatusTrackingForm.resx">
+      <DependentUpon>StatusTrackingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dictionary\InstallationProsthesesForm.resx">
+      <DependentUpon>InstallationProsthesesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dictionary\PatientsForm.resx">
+      <DependentUpon>PatientsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dictionary\ProsthesesForm.resx">
+      <DependentUpon>ProsthesesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dictionary\TypesProsthesesForm.resx">
+      <DependentUpon>TypesProsthesesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dictionary\UpdateInstallationProsthesesForm.resx">
+      <DependentUpon>UpdateInstallationProsthesesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dictionary\UpdatePatientsForm.resx">
+      <DependentUpon>UpdatePatientsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dictionary\UpdateProsthesesForm.resx">
+      <DependentUpon>UpdateProsthesesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dictionary\UpdateTypesProsthesesForm.resx">
+      <DependentUpon>UpdateTypesProsthesesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Raport\ErorRaportForm.resx">
+      <DependentUpon>ErorRaportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Raport\InstallForPeriodDateForm.resx">
+      <DependentUpon>InstallForPeriodDateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Raport\StatisticRaportForm.resx">
+      <DependentUpon>StatisticRaportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Raport\TypesProsthesesRaportForm.resx">
+      <DependentUpon>TypesProsthesesRaportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Systems\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Systems\SystemLogForm.resx">
+      <DependentUpon>SystemLogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Systems\UpdateUsersForm.resx">
+      <DependentUpon>UpdateUsersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Systems\UsersForm.resx">
+      <DependentUpon>UsersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonitoringProsthesesMDI.resx">
+      <DependentUpon>MonitoringProsthesesMDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\back.png" />
+    <Content Include="DB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>DB.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
