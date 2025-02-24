@@ -4,6 +4,7 @@
 
 The **Monitoring Prostheses App** is an innovative solution designed to monitor and manage the health and usage of prosthetic devices through IoT technology. It collects real-time data from prosthetic devices to ensure their functionality and prompt maintenance when necessary. The app also offers insights into device status, usage patterns, and alerts for any anomalies that may require attention.
 
+
 ## Features
 
 - **Real-Time Device Monitoring**: Continuously track the status and performance of prosthetic devices.
@@ -15,20 +16,9 @@ The **Monitoring Prostheses App** is an innovative solution designed to monitor 
 ## Technologies Used
 
 - **IoT Protocols**: MQTT, HTTP for device communication
-- **Backend**: Node.js, Express.js (or other relevant frameworks)
-- **Database**: PostgreSQL (or any database used)
-- **Frontend**: React.js (or alternative)
-- **Cloud/Hosting**: AWS, Docker for deployment and containerization
+- **Database**: PostgreSQL 
 
 ## Getting Started
-
-### Prerequisites
-
-- **Node.js** (LTS version recommended)
-- **NPM or Yarn**
-- **Git** for version control
-- **Docker** (if using containers)
-- **PostgreSQL** or another relational database (for data storage)
 
 ### Installation
 
@@ -40,11 +30,11 @@ The **Monitoring Prostheses App** is an innovative solution designed to monitor 
 ### Contributing
 
 We welcome contributions to improve the Monitoring Prostheses App. To contribute:
-	1.	Fork the repository.
-	2.	Create a new branch (git checkout -b feature-name).
-	3.	Make your changes and commit them (git commit -am 'Add feature').
-	4.	Push the branch to your fork (git push origin feature-name).
-	5.	Open a pull request.
+1.	Fork the repository.
+2.	Create a new branch (git checkout -b feature-name).
+3.	Make your changes and commit them (git commit -am 'Add feature').
+4.	Push the branch to your fork (git push origin feature-name).
+5.	Open a pull request.
 
 ### Contact
 
